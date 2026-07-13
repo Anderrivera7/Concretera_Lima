@@ -4,7 +4,7 @@ import { images } from "../data/content";
 
 export default function About() {
   return (
-    <section id="nosotros" className="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="nosotros" className="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 lg:grid-cols-2 lg:gap-14 lg:px-6">
         <motion.div
           initial={{ opacity: 0, x: -28 }}
@@ -13,15 +13,15 @@ export default function About() {
           transition={{ duration: 0.55 }}
         >
           <p className="mb-3 text-sm font-extrabold uppercase tracking-wide text-brand-orange">
-            Sobre Nosotros
+            Concretera Perú · Nosotros
           </p>
 
           <h2 className="mb-5 text-2xl font-extrabold uppercase leading-tight text-brand-blue sm:text-3xl lg:text-4xl">
-            Concretera en Lima: concreto premezclado de confianza
+            Concretería Lima: concreto premezclado de confianza
           </h2>
 
           <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:text-base">
-            En Concretera Lima somos tu concretería en Lima especializada en
+            En Concretera Perú somos tu concretera en Lima especializada en
             concreto premezclado de alta calidad para obras civiles, edificios,
             viviendas y proyectos industriales en Lima Metropolitana.
           </p>
@@ -57,7 +57,7 @@ export default function About() {
         >
           <img
             src={`${images.about}?v=2`}
-            alt="Bombeo de concreto premezclado — Concretera Lima"
+            alt="Bombeo de concreto premezclado — Concretera Perú"
             className="h-[300px] w-full object-cover sm:h-[380px] lg:h-[440px]"
           />
         </motion.div>

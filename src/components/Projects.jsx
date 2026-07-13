@@ -11,11 +11,10 @@ import WhatsAppButton from "./WhatsAppButton";
 const infoCards = [
   {
     icon: FaMapMarkerAlt,
-    title: "Dirección y Horario",
+    title: "Horario de Atención",
     content: (
       <>
-        <p>Lima, Perú</p>
-        <p className="mt-2">
+        <p className="mt-0">
           <span className="font-semibold text-brand-blue">Visitas a obra:</span>{" "}
           Lunes a Sábado, 6am a 6pm
         </p>
@@ -50,7 +49,7 @@ const infoCards = [
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="bg-white">
+    <section id="proyectos" className="scroll-mt-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:py-16 lg:px-6 lg:py-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -84,12 +83,15 @@ export default function Projects() {
           <h2 className="mb-5 text-2xl font-extrabold uppercase leading-tight text-brand-blue sm:text-3xl lg:text-4xl">
             ¿Dónde consigo concreto premezclado{" "}
             <span className="text-brand-orange">en Lima</span>?
+            <span className="mt-2 block text-base font-bold normal-case tracking-normal text-brand-blue/80 sm:text-lg">
+              Concretería Lima · Concretera Perú
+            </span>
           </h2>
 
           <p className="mx-auto mb-6 max-w-3xl text-sm leading-relaxed text-gray-600 sm:text-base">
             Si necesitas una cotización urgente de concreto premezclado por m³,
             encontraste la mejor opción en calidad, rapidez y costo. En
-            Concretera Lima te acompañamos desde el cubicaje hasta la entrega en
+            Concretera Perú te acompañamos desde el cubicaje hasta la entrega en
             obra.
           </p>
 

@@ -24,7 +24,7 @@ export default function CTA() {
         >
           <motion.img
             src={images.logo}
-            alt="Concretera Lima"
+            alt="Concretera Perú"
             initial={{ scale: 0.85, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
@@ -35,7 +35,7 @@ export default function CTA() {
             ¿Necesitas concreto premezclado en Lima?
           </h2>
           <p className="mb-8 text-lg font-medium text-white/90 sm:text-xl">
-            Cotizamos concreto y bombeo{" "}
+            Concretera Perú cotiza concreto y bombeo{" "}
             <span className="font-extrabold text-brand-orange">GRATIS</span>.
           </p>
 

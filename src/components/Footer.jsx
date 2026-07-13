@@ -25,16 +25,16 @@ export default function Footer() {
           <a href="#inicio" className="mb-4 flex items-center gap-2.5">
             <img
               src={images.logo}
-              alt="Concretera Lima"
+              alt="Concretera Perú"
               className="h-11 w-11 object-contain"
             />
             <span className="text-sm font-extrabold uppercase leading-tight">
               Concretera{" "}
-              <span className="text-brand-orange">Lima</span>
+              <span className="text-brand-orange">Perú</span>
             </span>
           </a>
           <p className="mb-4 text-sm leading-relaxed text-white/70">
-            Concretera en Lima: concreto premezclado, bombeo de concreto y
+            Concretera Perú: concreto premezclado, bombeo de concreto y
             cubicaje en obra para proyectos en Lima Metropolitana. Cotiza
             gratis.
           </p>
@@ -94,17 +94,19 @@ export default function Footer() {
 
         <div>
           <h4 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand-orange">
-            Empresa
+            Concretera Perú
           </h4>
           <ul className="space-y-2 text-sm text-white/70">
-            <li>{company.address}</li>
             <li>
               <a href={company.phoneLink} className="hover:text-white">
                 {company.phone}
               </a>
             </li>
             <li>
-              <a href={`mailto:${company.email}`} className="hover:text-white">
+              <a
+                href={`mailto:${company.email}`}
+                className="break-all hover:text-white"
+              >
                 {company.email}
               </a>
             </li>
@@ -114,7 +116,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Concretera Lima. Todos los derechos
+        © {new Date().getFullYear()} Concretera Perú. Todos los derechos
         reservados.
       </div>
     </footer>

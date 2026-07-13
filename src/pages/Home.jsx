@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import ServiceGallery from "../components/ServiceGallery";
 import Quality from "../components/Quality";
 import Coverage from "../components/Coverage";
+import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -16,12 +17,13 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
         <About />
+        <Services />
         <Projects />
         <ServiceGallery />
         <Quality />
         <Coverage />
+        <FAQ />
         <CTA />
         <Contact />
       </main>

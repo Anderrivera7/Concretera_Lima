@@ -17,7 +17,7 @@ const iconMap = {
 
 export default function Services() {
   return (
-    <section id="servicios" className="relative overflow-hidden py-16 sm:py-20 lg:py-24">
+    <section id="servicios" className="relative scroll-mt-28 overflow-hidden py-16 sm:py-20 lg:py-24">
       {/* Fondo con foto + overlay azul */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -33,10 +33,10 @@ export default function Services() {
           className="mb-12 text-center"
         >
           <h2 className="text-2xl font-extrabold uppercase tracking-wide text-white sm:text-3xl lg:text-4xl">
-            Servicios de concreto premezclado en Lima
+            Concretera en Lima: concreto premezclado y bombeo
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-white/80 sm:text-base">
-            Concreto, bombeo, cubicaje y asesoría técnica para tu obra.
+            Concreto Perú · Lima concreto · cubicaje y asesoría para tu obra
           </p>
           <span className="mx-auto mt-3 block h-1 w-16 rounded bg-brand-orange" />
         </motion.div>

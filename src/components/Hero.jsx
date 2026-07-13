@@ -40,16 +40,30 @@ export default function Hero() {
           className="flex w-full flex-col justify-center px-5 py-8 sm:px-8 sm:py-10 lg:w-[52%] lg:px-10 lg:py-12 xl:w-[50%] xl:px-14"
         >
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-brand-orange sm:mb-4 sm:text-sm md:text-base">
-            Concretera en Lima · Concreto Premezclado
+            Concretera en Lima · Concreto Premezclado · Concretera Perú
           </p>
 
-          <h1 className="mb-4 text-[2.6rem] font-extrabold uppercase leading-[0.98] text-white sm:mb-5 sm:text-5xl md:text-6xl lg:text-[3.75rem] xl:text-[4.5rem] 2xl:text-[5rem]">
-            Empresa
-            <br />
+          <h1 className="mb-3 text-[2.6rem] font-extrabold uppercase leading-[0.98] text-white sm:mb-4 sm:text-5xl md:text-6xl lg:text-[3.75rem] xl:text-[4.5rem] 2xl:text-[5rem]">
             Concretera
             <br />
-            <span className="text-brand-orange">Lima</span>
+            <span className="text-brand-orange">Perú</span>
+            <span className="mt-3 block text-base font-bold tracking-wide text-white/95 sm:mt-4 sm:text-lg md:text-xl lg:text-2xl">
+              Concretería Lima · Concreto premezclado en Lima
+            </span>
           </h1>
+
+          <a
+            href={company.phoneLink}
+            className="mb-5 inline-flex items-center gap-3 transition hover:opacity-90 sm:mb-6 sm:gap-4"
+            aria-label={`Llamar al ${company.phone}`}
+          >
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-orange text-white shadow-lg shadow-brand-orange/40 sm:h-14 sm:w-14 md:h-16 md:w-16">
+              <FaPhoneAlt className="text-lg sm:text-xl md:text-2xl" />
+            </span>
+            <span className="text-3xl font-extrabold tracking-wide text-white sm:text-4xl md:text-5xl lg:text-[3.25rem]">
+              {company.phone}
+            </span>
+          </a>
 
           <p className="mb-6 max-w-xl text-sm leading-relaxed text-white/90 sm:mb-8 sm:text-base md:text-lg lg:max-w-lg">
             Concreto premezclado, bombeo de concreto y cubicaje en obra en Lima
@@ -111,7 +125,7 @@ export default function Hero() {
         >
           <img
             src={images.heroEngineer}
-            alt="Ingeniera de Concretera Lima — concreto premezclado en Lima"
+            alt="Ingeniera de Concretera Perú — concreto premezclado en Lima"
             className="pointer-events-none h-[min(58svh,520px)] w-auto max-w-[95%] select-none object-contain object-bottom drop-shadow-[0_25px_50px_rgba(0,0,0,0.5)] sm:h-[min(62svh,600px)] md:h-[min(68svh,680px)] lg:absolute lg:bottom-0 lg:right-0 lg:h-[calc(100svh-108px)] lg:max-h-none lg:w-auto xl:right-[-1%] 2xl:right-0"
           />
         </motion.div>

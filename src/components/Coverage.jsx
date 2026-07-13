@@ -13,13 +13,14 @@ export default function Coverage() {
           className="mb-12 text-center"
         >
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-brand-orange sm:text-sm">
-            Cobertura
+            Lima concreto · Cobertura
           </p>
           <h2 className="text-2xl font-extrabold text-brand-blue sm:text-3xl lg:text-4xl">
-            Concreto premezclado en toda Lima Metropolitana
+            Concretera en Lima: concreto premezclado en toda la metrópoli
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-600 sm:text-base">
-            Entregamos concreto y bombeo en Lima Norte, Sur, Este y Centro.
+            Entregamos concreto premezclado y bombeo en Lima Norte, Sur, Este y
+            Centro.
           </p>
         </motion.div>
 
@@ -36,7 +37,7 @@ export default function Coverage() {
             >
               <div className="mb-4 flex items-center gap-2 text-brand-blue">
                 <FaMapMarkerAlt className="text-brand-orange" />
-                <h3 className="text-lg font-bold">{zone.zone}</h3>
+                <h3 className="text-lg font-bold">Concreto {zone.zone}</h3>
               </div>
               <ul className="space-y-2">
                 {zone.districts.map((d) => (

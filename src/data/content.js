@@ -1,17 +1,20 @@
 /**
- * Datos placeholder — reemplaza URLs e imágenes cuando tengas los assets finales.
+ * Datos de la empresa — Concretera Perú
  */
 
+const whatsappText = encodeURIComponent(
+  "Hola Silvia, solicito más información sobre concreto premezclado.",
+);
+
 export const company = {
-  name: "Concretera Lima",
+  name: "Concretera Perú",
   phone: "951 320 100",
   phoneLink: "tel:+51951320100",
   whatsapp: "51951320100",
-  whatsappLink: "https://wa.me/51951320100",
+  whatsappLink: `https://wa.me/51951320100?text=${whatsappText}`,
   facebook: "https://facebook.com/",
   linkedin: "https://linkedin.com/",
-  email: "correo@gmail.com",
-  address: "Av. Industrial 1250, Lima Metropolitana, Perú",
+  email: "silviachacaltanaguerrero@gmail.com",
   schedule: "Lun – Dom · 24/7",
 };
 
@@ -35,8 +38,8 @@ export const heroBenefits = [
     icon: "clock",
   },
   {
-    title: "CONCRETERA EN LIMA",
-    subtitle: "Toda la metrópoli",
+    title: "CONCRETERA PERÚ",
+    subtitle: "Lima y más",
     icon: "map",
   },
 ];
@@ -44,7 +47,7 @@ export const heroBenefits = [
 export const services = [
   {
     id: 1,
-    title: "Concreto Premezclado",
+    title: "Concreto Premezclado Lima",
     description:
       "Concreto premezclado en Lima para techos, losas, columnas y obras civiles. Calidad certificada y entrega puntual.",
     image: "/images/service-1.png?v=2",
@@ -52,7 +55,7 @@ export const services = [
   },
   {
     id: 2,
-    title: "Cubicaje en Obra",
+    title: "Cubicaje en Obra Lima",
     description:
       "Visita técnica gratis para calcular m³ de concreto premezclado según tu plano o obra en Lima.",
     image: "/images/service-2.png?v=2",
@@ -60,7 +63,7 @@ export const services = [
   },
   {
     id: 3,
-    title: "Bombeo de Concreto",
+    title: "Bombeo de Concreto Lima",
     description:
       "Bombeo de concreto a altura y zonas de difícil acceso. Mixer y bomba listos para tu vaciado.",
     image: "/images/service-3.png?v=2",
@@ -68,7 +71,7 @@ export const services = [
   },
   {
     id: 4,
-    title: "Asesoría Técnica",
+    title: "Asesoría Concretera Perú",
     description:
       "Te orientamos en el tipo de concreto ideal para tu proyecto: resistencia, slump y volumen.",
     image: "/images/service-4.png?v=2",
@@ -85,7 +88,7 @@ export const servicePhotos = [
   {
     id: 2,
     src: "/images/service-2.png?v=2",
-    alt: "Vaciado de concreto en techos y losas — Concretera Lima",
+    alt: "Vaciado de concreto en techos y losas — Concretera Perú",
   },
   {
     id: 3,
@@ -100,7 +103,7 @@ export const servicePhotos = [
   {
     id: 5,
     src: "/images/service-5.png?v=2",
-    alt: "Descarga de concreto premezclado en obra — Concretera Lima",
+    alt: "Descarga de concreto premezclado en obra — Concretera Perú",
   },
   {
     id: 6,
@@ -115,17 +118,17 @@ export const servicePhotos = [
   {
     id: 8,
     src: "/images/service-8.png",
-    alt: "Bombeo de concreto en obra civil — concretera en Lima",
+    alt: "Bombeo de concreto en obra civil — Concretera Perú",
   },
   {
     id: 9,
     src: "/images/service-9.png",
-    alt: "Bomba de concreto a altura — concreto premezclado Lima",
+    alt: "Bomba de concreto a altura — concreto premezclado Perú",
   },
 ];
 
 export const aboutFeatures = [
-  { title: "Experiencia", text: "Más de 10 años como concretera en Lima." },
+  { title: "Experiencia", text: "Más de 10 años como concretera en el Perú." },
   { title: "Calidad", text: "Concreto premezclado certificado y controlado." },
   { title: "Equipo Profesional", text: "Personal técnico capacitado en obra." },
   { title: "Entrega Puntual", text: "Mixer y bombeo a tiempo en tu proyecto." },

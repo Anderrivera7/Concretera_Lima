@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://concreteralima.com/sitemap.xml
+Sitemap: https://concretopremezcladoperu.com/sitemap.xml

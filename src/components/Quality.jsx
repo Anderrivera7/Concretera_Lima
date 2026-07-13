@@ -56,11 +56,11 @@ export default function Quality() {
             </p>
 
             <h2 className="mb-4 text-2xl font-extrabold uppercase leading-tight text-brand-blue sm:text-3xl lg:text-[2rem]">
-              Calidad certificada del concreto premezclado
+              Calidad del concreto premezclado — Concretera Perú
             </h2>
 
             <p className="mb-6 text-sm leading-relaxed text-gray-600 sm:text-base">
-              En Concretera Lima respaldamos cada m³ de concreto premezclado con
+              En Concretera Perú respaldamos cada m³ de concreto premezclado con
               control de calidad y documentación técnica. Equipo puntual para
               tu obra en Lima Metropolitana.
             </p>
@@ -167,11 +167,11 @@ export default function Quality() {
               <span className="h-px w-8 bg-gradient-to-l from-transparent to-brand-orange sm:w-12" />
             </div>
 
-            <p className="text-xl font-extrabold uppercase tracking-[0.1em] text-white sm:text-2xl md:text-3xl lg:text-[2.5rem]">
-              Concreto Premezclado
-            </p>
+            <h2 className="text-xl font-extrabold uppercase tracking-[0.1em] text-white sm:text-2xl md:text-3xl lg:text-[2.5rem]">
+              Concreto Premezclado Lima
+            </h2>
             <p className="mt-1 text-3xl font-extrabold uppercase tracking-[0.15em] text-brand-orange sm:text-4xl md:text-5xl">
-              Lima
+              Concretera Perú
             </p>
 
             <p className="mt-4 max-w-lg text-sm leading-relaxed text-white/85 sm:text-base">
@@ -199,7 +199,7 @@ export default function Quality() {
           >
             <img
               src="/images/worker-png.png?v=4"
-              alt="Control de calidad de concreto premezclado — Concretera Lima"
+              alt="Control de calidad de concreto premezclado — Concretera Perú"
               className="relative z-10 h-auto w-full max-h-[280px] object-contain object-bottom drop-shadow-2xl sm:max-h-[320px] lg:max-h-[380px]"
             />
           </motion.div>

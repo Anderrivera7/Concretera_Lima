@@ -19,17 +19,26 @@ export default function Navbar() {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
 
-      const sections = navLinks.map((l) => l.href.replace("#", ""));
-      for (const id of [...sections].reverse()) {
-        const el = document.getElementById(id);
-        if (el && window.scrollY + 140 >= el.offsetTop) {
-          setActive(`#${id}`);
+      const offset = 160;
+      const positions = navLinks
+        .map((l) => {
+          const id = l.href.replace("#", "");
+          const el = document.getElementById(id);
+          return el ? { href: l.href, top: el.offsetTop } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.top - a.top);
+
+      for (const { href, top } of positions) {
+        if (window.scrollY + offset >= top) {
+          setActive(href);
           break;
         }
       }
     };
 
-    window.addEventListener("scroll", onScroll);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -84,12 +93,12 @@ export default function Navbar() {
           >
             <img
               src={images.logo}
-              alt="Logo Concretera Lima — concreto premezclado"
+              alt="Logo Concretera Perú — concreto premezclado"
               className="-my-4 h-20 w-20 shrink-0 object-contain sm:-my-5 sm:h-24 sm:w-24 md:-my-6 md:h-28 md:w-28"
             />
             <span className="truncate text-xs font-extrabold uppercase leading-none tracking-wide text-brand-blue sm:text-sm md:text-base">
               Concretera
-              <span className="ml-1 text-brand-orange">Lima</span>
+              <span className="ml-1 text-brand-orange">Perú</span>
             </span>
           </a>
 

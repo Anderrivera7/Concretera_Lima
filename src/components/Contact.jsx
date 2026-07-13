@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  FaMapMarkerAlt,
   FaEnvelope,
   FaClock,
   FaPhoneAlt,
@@ -18,21 +17,46 @@ const initialForm = {
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    setForm(initialForm);
-    setTimeout(() => setSent(false), 4000);
+    setStatus("sending");
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/" + company.email, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Cotización web — ${form.nombre}`,
+          Nombre: form.nombre,
+          Teléfono: form.telefono,
+          Correo: form.correo,
+          Mensaje: form.mensaje,
+          _template: "table",
+        }),
+      });
+
+      if (!response.ok) throw new Error("Error al enviar");
+
+      setStatus("sent");
+      setForm(initialForm);
+      setTimeout(() => setStatus("idle"), 6000);
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 6000);
+    }
   };
 
   return (
-    <section id="contacto" className="bg-white py-16 sm:py-20 lg:py-24">
+    <section id="contacto" className="scroll-mt-28 bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,11 +68,11 @@ export default function Contact() {
             Contacto
           </p>
           <h2 className="text-2xl font-extrabold text-brand-blue sm:text-3xl lg:text-4xl">
-            Cotiza concreto premezclado en Lima
+            Cotiza concreto premezclado en Lima — Concretera Perú
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-gray-600 sm:text-base">
-            Escríbenos y recibe tu cotización de concreto, bombeo o cubicaje
-            sin costo.
+            Escríbenos a tu concretería Lima: cotización de concreto, bombeo o
+            cubicaje sin costo.
           </p>
         </motion.div>
 
@@ -120,13 +144,20 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full rounded-lg bg-brand-orange py-3.5 text-sm font-semibold text-white transition hover:bg-[#e07418]"
+              disabled={status === "sending"}
+              className="w-full rounded-lg bg-brand-orange py-3.5 text-sm font-semibold text-white transition hover:bg-[#e07418] disabled:cursor-not-allowed disabled:opacity-70"
             >
-              Enviar
+              {status === "sending" ? "Enviando..." : "Enviar"}
             </button>
-            {sent && (
+            {status === "sent" && (
               <p className="mt-3 text-center text-sm font-medium text-green-600">
-                ¡Mensaje enviado! Te contactaremos pronto.
+                ¡Mensaje enviado! Revisa tu Gmail pronto.
+              </p>
+            )}
+            {status === "error" && (
+              <p className="mt-3 text-center text-sm font-medium text-red-600">
+                No se pudo enviar. Intenta por WhatsApp o llama al{" "}
+                {company.phone}.
               </p>
             )}
           </motion.form>
@@ -139,19 +170,12 @@ export default function Contact() {
           >
             <div className="space-y-4 rounded-2xl bg-brand-gray p-6 sm:p-8">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="mt-1 text-brand-orange" />
-                <div>
-                  <p className="font-semibold text-brand-blue">Dirección</p>
-                  <p className="text-sm text-gray-600">{company.address}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
                 <FaEnvelope className="mt-1 text-brand-orange" />
                 <div>
                   <p className="font-semibold text-brand-blue">Correo</p>
                   <a
                     href={`mailto:${company.email}`}
-                    className="text-sm text-gray-600 hover:text-brand-orange"
+                    className="break-all text-sm text-gray-600 hover:text-brand-orange"
                   >
                     {company.email}
                   </a>

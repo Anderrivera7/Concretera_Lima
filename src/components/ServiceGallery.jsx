@@ -53,14 +53,14 @@ export default function ServiceGallery() {
         >
           <motion.img
             src={images.logo}
-            alt="Concretera Lima"
+            alt="Concretera Perú"
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             className="mx-auto mb-4 h-28 w-auto object-contain sm:mb-5 sm:h-36 md:h-40"
           />
           <h2 className="text-xl font-extrabold uppercase tracking-wide text-brand-blue sm:text-3xl lg:text-3xl">
-            Nuestros Servicios
+            Concreto premezclado y bombeo — Concretera Perú
           </h2>
           <motion.span
             initial={{ scaleX: 0 }}
