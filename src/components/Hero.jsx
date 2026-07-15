@@ -48,7 +48,7 @@ export default function Hero() {
             <br />
             <span className="text-brand-orange">Perú</span>
             <span className="mt-3 block text-base font-bold tracking-wide text-white/95 sm:mt-4 sm:text-lg md:text-xl lg:text-2xl">
-              Concretería Lima · Concreto premezclado en Lima
+              Concretera Lima · Concreto premezclado en Lima
             </span>
           </h1>
 

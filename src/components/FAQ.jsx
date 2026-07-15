@@ -41,7 +41,7 @@ export default function FAQ() {
             FAQ concreto premezclado
           </p>
           <h2 className="text-2xl font-extrabold text-brand-blue sm:text-3xl">
-            Concretería Lima y concreto premezclado: preguntas frecuentes
+            Concretera Lima y concreto premezclado: preguntas frecuentes
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-gray-600 sm:text-base">
             Dudas sobre concreto Perú, bombeo y cubicaje con Concretera Perú.

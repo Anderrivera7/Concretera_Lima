@@ -84,7 +84,7 @@ export default function Projects() {
             ¿Dónde consigo concreto premezclado{" "}
             <span className="text-brand-orange">en Lima</span>?
             <span className="mt-2 block text-base font-bold normal-case tracking-normal text-brand-blue/80 sm:text-lg">
-              Concretería Lima · Concretera Perú
+              Concretera Lima · Concretera Perú
             </span>
           </h2>
 

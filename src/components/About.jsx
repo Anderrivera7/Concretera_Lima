@@ -17,7 +17,7 @@ export default function About() {
           </p>
 
           <h2 className="mb-5 text-2xl font-extrabold uppercase leading-tight text-brand-blue sm:text-3xl lg:text-4xl">
-            Concretería Lima: concreto premezclado de confianza
+            Concretera Lima: concreto premezclado de confianza
           </h2>
 
           <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:text-base">

@@ -71,7 +71,7 @@ export default function Contact() {
             Cotiza concreto premezclado en Lima — Concretera Perú
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-gray-600 sm:text-base">
-            Escríbenos a tu concretería Lima: cotización de concreto, bombeo o
+            Escríbenos a tu concretera Lima: cotización de concreto, bombeo o
             cubicaje sin costo.
           </p>
         </motion.div>
